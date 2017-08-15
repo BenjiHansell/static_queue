@@ -13,4 +13,4 @@ static_queue<int, 20> q;
 ```
 
 ## compatibility
-Tested to work with GCC and Clang in C++97, C++03, C++11, C++14 amd C++17 modes.  Also workins in Arduino and Visual Studio 2017.  Does not require STL to be available but does depend on <stddef.h>.
+Tested to work with GCC and Clang in C++97, C++03, C++11, C++14 and C++17 modes.  Also works in Arduino and Visual Studio 2017.  Does not require STL to be available but does depend on <stddef.h>.
