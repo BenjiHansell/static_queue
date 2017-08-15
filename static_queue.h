@@ -48,9 +48,11 @@ T &static_queue<T, max_size>::front() {
 }
 
 // should not be called on an empty queue
-template <typename T, size_type max_size> T &static_queue<T, max_size>::back() {
+template <typename T, size_type max_size> 
+T &static_queue<T, max_size>::back() {
   size_type end_idx = start_idx + size() - 1;
-  end_idx %= max_size;
+  if(end_idx >= max_size) 
+    end_idx -= max_size;
   return data[end_idx];
 }
 
