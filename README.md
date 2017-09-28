@@ -1,5 +1,5 @@
 # static_queue
-A C++ container template class similar to STL's queue but which avoids dynamic memory allocation.  Intended for use embeded systems where dynamic memory allaocation is unfavourable, but may also have a cache performance benefit on larger systems.  
+A C++ container template class similar to std::queue but which avoids dynamic memory allocation.  Intended for use embeded systems where dynamic memory allaocation is unfavourable, but may also have a cache performance benefit on larger systems.  
 The interface is the same as that of [std::queue](http://www.cplusplus.com/reference/queue/queue/) with all C++03 methods replicated, except for operators.
 
 ## usage
