@@ -10,8 +10,7 @@
 // available, STD_LIB_AVAILABLE must be defined to prevent placement operator
 // new being	defined twice
 // if not using Arduino, the C++ standard library is assumed to be available,
-// otherwise STD_LIB_UNAVAILABLE must be defined before #include
-// <static_queue.h>
+// otherwise STD_LIB_UNAVAILABLE must be defined before #include <static_queue.h>
 
 #ifdef STD_LIB_UNAVAILABLE
 void *operator new(size_t size, void *ptr) {
@@ -39,7 +38,7 @@ private:
   size_type start_idx;
   size_type _size;
   char data_raw[max_size * sizeof(T)];
-  T *const data; // might be able to make this a reference
+  T *const data; // this should be replaced with a method
 };
 
 template <typename T, size_type max_size>
